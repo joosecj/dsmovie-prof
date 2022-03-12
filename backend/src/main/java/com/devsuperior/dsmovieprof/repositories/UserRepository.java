@@ -6,5 +6,5 @@ import com.devsuperior.dsmovieprof.entities.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 	
-	User FindByEmail(String email);
+	User findByEmail(String email);
 }
