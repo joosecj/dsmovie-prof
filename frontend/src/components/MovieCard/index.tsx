@@ -1,3 +1,4 @@
+/* eslint-disable no-template-curly-in-string */
 import MovieScore from "components/MovieScore";
 import { Link } from "react-router-dom";
 
@@ -18,7 +19,7 @@ function MovieCard() {
                 <h3>{movie.title}</h3>
                 <MovieScore />
 
-                <Link to={'/form/${movie.id}'}>
+                <Link to={'/form/${movie.id}'}> 
                     <div className="btn btn-primary dsmovie-btn">Avaliar</div>
                 </Link>
             </div>
